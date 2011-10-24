@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Nebulous.Cli
+namespace Nebulous.Master
 {
     static class Program
     {

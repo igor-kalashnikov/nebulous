@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Nebulous.Cli
+namespace Nebulous.Slave
 {
     static class Program
     {

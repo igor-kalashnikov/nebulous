@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Nebulous Command Line Interface")]
+[assembly: AssemblyTitle("Nebulous Slave Node")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bffba208-e444-4f9b-8b4e-27a6afd5a01a")]
+[assembly: Guid("82cbeb25-2de6-43a3-b744-de7718d55ba5")]
 
 // Version information for an assembly consists of the following four values:
 //

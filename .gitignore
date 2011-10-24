@@ -5,3 +5,7 @@ _ReSharper*
 *.tmp
 Cli/bin
 Cli/obj
+Master/bin
+Master/obj
+Slave/bin
+Slave/obj
