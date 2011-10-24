@@ -1,0 +1,3 @@
+[submodule "Cloudy"]
+	path = Cloudy
+	url = git@github.com:eigenein/cloudy.git
