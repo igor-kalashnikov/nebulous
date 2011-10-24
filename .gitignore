@@ -3,3 +3,5 @@ _ReSharper*
 ~$*.docx
 *.user
 *.tmp
+Cli/bin
+Cli/obj
