@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Namespaces>
+  <Namespace Name="ConvolutionalNeuralNetwork">
+   <Messages>
+    <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+     <Issue Certainty="50" Level="Warning">Consider merging the types defined in 'ConvolutionalNeuralNetwork' with another namespace.</Issue>
+    </Message>
+    <Message Id="Convolutional" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Convolutional' in namespace name 'ConvolutionalNeuralNetwork'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Nebulous.ConvolutionalNeuralNetwork">
+   <Messages>
+    <Message Id="Convolutional" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Convolutional' in namespace name 'Nebulous.ConvolutionalNeuralNetwork'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork\bin\Debug\ConvolutionalNeuralNetwork.dll">
+   <Modules>
+    <Module Name="convolutionalneuralnetwork.dll">
+     <Messages>
+      <Message Id="Convolutional" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Convolutional' in assembly name 'ConvolutionalNeuralNetwork.dll'.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'ConvolutionalNeuralNetwork.dll' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="ConvolutionalNeuralNetwork">
+       <Types>
+        <Type Name="Utils" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Utils" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Utils' in type name 'Utils'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DSIGMOID(System.Double)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DSIGMOID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Utils.cs" Line="13">Correct the casing of 'DSIGMOID' in member name 'Utils.DSIGMOID(double)' by changing it to 'Dsigmoid'.</Issue>
+            </Message>
+            <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Utils.cs" Line="13">In method 'Utils.DSIGMOID(double)', consider providing a more meaningful name than parameter name 'x'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SIGMOID(System.Double)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SIGMOID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Utils.cs" Line="8">Correct the casing of 'SIGMOID' in member name 'Utils.SIGMOID(double)' by changing it to 'Sigmoid'.</Issue>
+            </Message>
+            <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Utils.cs" Line="8">In method 'Utils.SIGMOID(double)', consider providing a more meaningful name than parameter name 'x'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Nebulous.ConvolutionalNeuralNetwork">
+       <Types>
+        <Type Name="Connection" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.UInt32,System.UInt32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Connection.cs" Line="7">Replace method 'Connection.Connection(uint, uint)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Layer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,Nebulous.ConvolutionalNeuralNetwork.Layer)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="238">Replace method 'Layer.Layer(string, Layer)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+            <Message Id="Prev" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="238">In method 'Layer.Layer(string, Layer)', correct the spelling of 'Prev' in parameter name 'pPrev' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="p" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="238">In method 'Layer.Layer(string, Layer)', correct the spelling of 'p' in parameter name 'pPrev' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="238">In method 'Layer.Layer(string, Layer)', correct the spelling of 'str' in parameter name 'str' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Backpropagate(System.Collections.Generic.List`1&lt;System.Double&gt;,System.Collections.Generic.List`1&lt;System.Double&gt;,System.Collections.Generic.List`1&lt;System.Double&gt;,System.Collections.Generic.List`1&lt;System.Double&gt;,System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">Change 'List&lt;double&gt;' in 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">Change 'List&lt;double&gt;' in 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">Change 'List&lt;double&gt;' in 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">Change 'List&lt;double&gt;' in 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="Xn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In member 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the casing of 'Xn' in parameter name 'dErr_wrt_dXn' by changing it to 'XN'.</Issue>
+            </Message>
+            <Message Id="d" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In member 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the casing of 'd' in parameter name 'dErr_wrt_dXn' by changing it to 'D'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In member 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the casing of 'd' in parameter name 'dErr_wrt_dXnm1' by changing it to 'D'.</Issue>
+            </Message>
+            <Message Id="wrt" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In member 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the casing of 'wrt' in parameter name 'dErr_wrt_dXn' by changing it to 'Wrt'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In member 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the casing of 'wrt' in parameter name 'dErr_wrt_dXnm1' by changing it to 'Wrt'.</Issue>
+            </Message>
+            <Message Id="Backpropagate" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">Correct the spelling of 'Backpropagate' in member name 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Xn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the spelling of 'Xn' in parameter name 'dErr_wrt_dXn' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Xnm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the spelling of 'Xnm' in parameter name 'dErr_wrt_dXnm1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="d" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the spelling of 'd' in parameter name 'dErr_wrt_dXn' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the spelling of 'd' in parameter name 'dErr_wrt_dXnm1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="prev" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the spelling of 'prev' in parameter name 'prevLayerOutput' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="wrt" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the spelling of 'wrt' in parameter name 'dErr_wrt_dXn' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', correct the spelling of 'wrt' in parameter name 'dErr_wrt_dXnm1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In member 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', remove the underscores from parameter name 'dErr_wrt_dXn'.</Issue>
+             <Issue Name="MemberParameter" Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="56">In member 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', remove the underscores from parameter name 'dErr_wrt_dXnm1'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="78">In externally visible method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', validate parameter 'dErr_wrt_dXn' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="115">In externally visible method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', validate parameter 'dErr_wrt_dXnm1' before using it.</Issue>
+            </Message>
+            <Message Id="2" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="76">In externally visible method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', validate parameter 'thisLayerOutput' before using it.</Issue>
+            </Message>
+            <Message Id="3" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="93">In externally visible method 'Layer.Backpropagate(List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, List&lt;double&gt;, double)', validate parameter 'prevLayerOutput' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackpropagateSecondDerivatives(System.Collections.Generic.List`1&lt;System.Double&gt;,System.Collections.Generic.List`1&lt;System.Double&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">Change 'List&lt;double&gt;' in 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+             <Issue Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">Change 'List&lt;double&gt;' in 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="Xn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In member 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the casing of 'Xn' in parameter name 'd2Err_wrt_dXn' by changing it to 'XN'.</Issue>
+            </Message>
+            <Message Id="d" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In member 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the casing of 'd' in parameter name 'd2Err_wrt_dXn' by changing it to 'D'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In member 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the casing of 'd' in parameter name 'd2Err_wrt_dXnm1' by changing it to 'D'.</Issue>
+            </Message>
+            <Message Id="wrt" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In member 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the casing of 'wrt' in parameter name 'd2Err_wrt_dXn' by changing it to 'Wrt'.</Issue>
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In member 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the casing of 'wrt' in parameter name 'd2Err_wrt_dXnm1' by changing it to 'Wrt'.</Issue>
+            </Message>
+            <Message Id="Backpropagate" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">Correct the spelling of 'Backpropagate' in member name 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Xn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In method 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the spelling of 'Xn' in parameter name 'd2Err_wrt_dXn' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Xnm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In method 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the spelling of 'Xnm' in parameter name 'd2Err_wrt_dXnm1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="d" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In method 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the spelling of 'd' in parameter name 'd2Err_wrt_dXn' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In method 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the spelling of 'd' in parameter name 'd2Err_wrt_dXnm1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="wrt" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In method 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the spelling of 'wrt' in parameter name 'd2Err_wrt_dXn' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In method 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', correct the spelling of 'wrt' in parameter name 'd2Err_wrt_dXnm1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In member 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', remove the underscores from parameter name 'd2Err_wrt_dXn'.</Issue>
+             <Issue Name="MemberParameter" Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="156">In member 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', remove the underscores from parameter name 'd2Err_wrt_dXnm1'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="177">In externally visible method 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', validate parameter 'd2Err_wrt_dXn' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="204">In externally visible method 'Layer.BackpropagateSecondDerivatives(List&lt;double&gt;, List&lt;double&gt;)', validate parameter 'd2Err_wrt_dXnm1' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivideHessianInformationBy(System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="148">The 'this' parameter (or 'Me' in Visual Basic) of 'Layer.DivideHessianInformationBy(double)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="divisor" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Layer.cs" Line="148">Parameter 'divisor' of 'Layer.DivideHessianInformationBy(double)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#label" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Layer.label' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#m_bFloatingPointWarning" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Layer.m_bFloatingPointWarning' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#m_Neurons" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Layer.m_Neurons' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;Neuron&gt;' in 'Layer.m_Neurons' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#m_pPrevLayer" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Layer.m_pPrevLayer' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="Prev" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Prev' in member name 'Layer.m_pPrevLayer' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#m_Weights" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Layer.m_Weights' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;Weight&gt;' in 'Layer.m_Weights' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NeuralNetwork" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Backpropagate(System.Double[],System.Double[],System.UInt32,System.Collections.Generic.List`1&lt;System.Collections.Generic.List`1&lt;System.Double&gt;&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="102">'NeuralNetwork.Backpropagate(double[], double[], uint, List&lt;List&lt;double&gt;&gt;)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackpropagateSecondDervatives(System.Double[],System.Double[],System.UInt32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Backpropagate" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="172">Correct the spelling of 'Backpropagate' in member name 'NeuralNetwork.BackpropagateSecondDervatives(double[], double[], uint)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Dervatives" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="172">Correct the spelling of 'Dervatives' in member name 'NeuralNetwork.BackpropagateSecondDervatives(double[], double[], uint)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Calculate(System.Double[],System.UInt32,System.Double[],System.UInt32,System.Collections.Generic.List`1&lt;System.Collections.Generic.List`1&lt;System.Double&gt;&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="39">'NeuralNetwork.Calculate(double[], uint, double[], uint, List&lt;List&lt;double&gt;&gt;)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DivideHessianInformationBy(System.Double)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="164">'NeuralNetwork.DivideHessianInformationBy(double)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EraseHessianInformation()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="155">'NeuralNetwork.EraseHessianInformation()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Initialize()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="216">'NeuralNetwork.Initialize()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Layers" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="16">Change 'NeuralNetwork.Layers' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="16">Change 'List&lt;Layer&gt;' in 'NeuralNetwork.Layers' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#m_etaLearningRatePrevious" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'NeuralNetwork.m_etaLearningRatePrevious' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PeriodicWeightSanityCheck()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="NeuralNetwork.cs" Line="29">'NeuralNetwork.PeriodicWeightSanityCheck()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Neuron" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Neuron.cs" Line="29">In method 'Neuron.Neuron(string)', correct the spelling of 'str' in parameter name 'str' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddConnection(System.UInt32,System.UInt32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="i" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Neuron.cs" Line="19">In method 'Neuron.AddConnection(uint, uint)', correct the spelling of 'i' in parameter name 'iNeuron' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Neuron.cs" Line="19">In method 'Neuron.AddConnection(uint, uint)', correct the spelling of 'i' in parameter name 'iWeight' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Initialize()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Neuron.cs" Line="38">'Neuron.Initialize()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#label" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Neuron.label' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#m_Connections" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Neuron.m_Connections' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;Connection&gt;' in 'Neuron.m_Connections' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#output" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Neuron.output' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Weight" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Weight.cs" Line="18">Replace method 'Weight.Weight(string, double)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+            <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Weight.cs" Line="18">In method 'Weight.Weight(string, double)', correct the spelling of 'str' in parameter name 'str' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="val" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Weight.cs" Line="18">In method 'Weight.Weight(string, double)', correct the spelling of 'val' in parameter name 'val' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#diagHessian" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Weight.diagHessian' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="diag" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'diag' in member name 'Weight.diagHessian' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Initialize()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Weight.cs" Line="24">'Weight.Initialize()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="D:\Development\nebulous\OCR\ConvolutionalNeuralNetwork" File="Weight.cs" Line="24">The 'this' parameter (or 'Me' in Visual Basic) of 'Weight.Initialize()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#label" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Weight.label' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#value" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2011-10-28 20:46:53Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Weight.value' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+   <Name>Avoid namespaces with few types</Name>
+   <Description>A namespace should generally have more than five types.</Description>
+   <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182130(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection properties should be read only</Name>
+   <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection. Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</Description>
+   <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026">
+   <Name>Default parameters should not be used</Name>
+   <Description>Some programming languages do not support default parameters. Replace default parameters with method overloads that supply the default argument.</Description>
+   <Resolution Name="Default">Replace method {0} with an overload that supplies all default arguments.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182135(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>Do not declare visible instance fields</Name>
+   <Description>Instance fields that are visible outside of the type that declares them, limit your ability to change the implementation details for those data items. Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the implementation details of the underlying data.</Description>
+   <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="MemberParameter">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameterMoreMeaningfulName">In method {0}, consider providing a more meaningful name than parameter name {1}.</Resolution>
+   <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>Identifiers should not contain underscores</Name>
+   <Description>Do not use underscores when specifying identifiers. Some generated Visual Studio identifiers for applications contain underscore characters. Underscore characters should generally be avoided in public identifiers.</Description>
+   <Resolution Name="MemberParameter">In member {0}, remove the underscores from parameter name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182245(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
