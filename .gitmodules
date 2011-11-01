@@ -1,6 +1,11 @@
 [submodule "Cloudy"]
 	path = Cloudy
 	url = git@github.com:eigenein/cloudy.git
+<<<<<<< HEAD
 [submodule "visionary"]
 	path = visionary
+=======
+[submodule "Visionary"]
+	path = Visionary
+>>>>>>> afb37f648ba62e0133ef6de6a8db29919b2f2407
 	url = git@github.com:hplus/visionary.git
