@@ -1,3 +1,6 @@
 [submodule "Cloudy"]
 	path = Cloudy
 	url = git@github.com:eigenein/cloudy.git
+[submodule "visionary"]
+	path = visionary
+	url = git@github.com:hplus/visionary.git
